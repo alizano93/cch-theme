@@ -1,0 +1,113 @@
+/* Black */
+$bgDefault      : #000000;
+$bgHighlight    : #212F3D;
+$colDefault     : #ecf0f1;
+$colHover       : #626567; 
+
+/* --- Style Nav Bar--- */
+.navbar-default {
+    background-color: $bgDefault;
+    border-color: $bgHighlight;
+    min-height: 60px;
+    margin-bottom: 0px;
+    .navbar-brand {
+        padding-left: 5%;
+        padding-top: 5px;
+        min-height: 60px;
+        img {
+            margin-left: 45px;
+            height: inherit;
+        }
+        color: $colDefault;
+        &:hover, &:focus {
+            color: $colHover; }}
+    .navbar-nav {
+        padding-top: 5px;
+        > li {
+            margin-right: 25px;
+            > a {
+                color: $colDefault;
+                &:hover, &:focus {
+                    color: $colHover;   }}}
+        .active {
+            > a, > a:hover, > a:focus {
+                color: $colHover;
+                background-color: $bgHighlight; }}
+        .open {
+            > a, > a:hover, > a:focus {
+                color: $colHover;
+                background-color: $bgHighlight;
+                .caret {
+                    border-top-color: $colHover;
+                    border-bottom-color: $colHover; }}}
+        > .dropdown {
+            > a {
+                .caret {
+                    border-top-color: $colDefault;
+                    border-bottom-color: $colDefault; }
+                &:hover, &:focus {
+                    .caret {
+                        border-top-color: $colHover;
+                        border-bottom-color: $colHover; }}}}}
+    .navbar-toggle {
+        border-color: $bgHighlight;
+        &:hover, &:focus {
+            background-color: $bgHighlight; }
+        .icon-bar {
+            background-color: $colDefault; }}}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: $colDefault;
+        &:hover, &:focus {
+            color: $colHover;
+            background-color: $bgHighlight; }}
+
+    .navbar-default .navbar-brand{
+        padding-left: 0px;
+        > img {
+            position:absolute;
+            margin-left: 5%;
+        }
+    }          
+            
+}
+/* --- End Style for Nav Bar--- */
+
+//section 1
+.transparent-no{
+    opacity: 1!important;
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    > img.bg-home {
+        position:absolute;
+        margin-top: 0px;
+        width: 100%;
+        height: 737px;
+    }
+
+    > img.bg-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 600px;
+    }
+    #img1 {
+        opacity: 0;
+        -webkit-transition: opacity 2s ease-in-out;
+        -moz-transition: opacity 2s ease-in-out;
+        -o-transition: opacity 2s ease-in-out;
+        transition: opacity 2s ease-in-out;
+    }
+    #img2{
+        opacity: 0;
+        -webkit-transition: opacity 2s ease-in-out;
+        -moz-transition: opacity 2s ease-in-out;
+        -o-transition: opacity 2s ease-in-out;
+        transition: opacity 2s ease-in-out;
+    }
+}
