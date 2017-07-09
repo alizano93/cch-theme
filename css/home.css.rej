@@ -1,0 +1,81 @@
+--- home.css
++++ home.css
+@@ -67,61 +67,63 @@
+   opacity: 1 !important; }
+ 
+ #section1-container{
++
+   position: relative;
+   z-index: -1;
+   padding:0px;
++
+ }
+ 
+ #section1-container img{
++
+   position: absolute;
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
++
+ }
+ 
+ #section1-container #img1{
++
+   width: 100vw;
+   height: 100vh;
++
+ }
+ 
+ #section1-container #img2{
++
+   width: 100vw;
+   max-height: 100vh;
++
+ }
+ 
+ #section1-container #img3{
++
+   margin-top: 80vh;
++
+ }
+ 
+ #section2-container{
+-  padding-top: 100vh;
+-  height: 200vh;
++
++  position: relative;
+   z-index: -1;
+-  position: relative;
++  padding:0px;
++
+ }
+ #section3-container{
++
+   position: relative;
+-  height: 100vh;
+   z-index: -1;
+   padding:0px;
+-}
+-#parallax-container{
+-
+-  background-image: url('../images/parallax.jpg');
+-  background-attachment: fixed;
+-  background-size: cover;
+-  background-repeat: no-repeat;
+-  background-position: center;
+-  height: 150px;
+-  position: relative;
+ 
+ }
+ #section4-container{
+-  height: 100vh;
++
+   position: relative;
+   z-index: -1;
+   padding:0px;
++
+ }
+ 
+ 
