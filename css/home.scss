@@ -9,6 +9,7 @@ $navTextHover       : #626567;
 .navbar-default {
     background-color: $navBg;
     border-color: $navHighlight;
+    z-index: 2;
     min-height: 60px;
     margin-bottom: 0px;
     .navbar-brand {
@@ -56,87 +57,16 @@ $navTextHover       : #626567;
             background-color: $navHighlight; }
         .icon-bar {
             background-color: $navText; }}}
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: $navText;
-        &:hover, &:focus {
-            color: $navTextHover;
-            background-color: $navHighlight; }}
 
-    .navbar-default .navbar-brand{
-        padding-left: 0px;
-        > img {
-            position:absolute;
-            margin-left: 5%;
-        }
-    }          
-            
+ /* --- End Style for Nav Bar--- */
+//all sections
+.section {
+    position: relative;
+    padding-right: 0px;
+    padding-left: 0px;
 }
-
 /* --- End Style for Nav Bar--- */
 
-//section 1
-.transparent-no {
-  opacity: 1 !important;
-}
-
-#section1-container{
-  position: relative;
-  z-index: -1;
-  padding:0px;
-}
-#section1-container img{
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-#section1-container #img1{
-  width: 100vw;
-  height: 100vh;
-}
-#section1-container #img2{
-  width: 100vw;
-  max-height: 100vh;
-}
-#section1-container #img3{
-
-  max-width: 100vw;
-  margin-top: 80vh;
-
-}
-#section2-container{
-  position: relative;
-  z-index: -1;
-  padding-top:100vh;
-  height: 200vh;
-}
-#section2-container img{
-
-    width: 100%;
-    height: 100%;
-
-}
-#parallax-container{
-  background-image: url('../images/parallax.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 150px;
-  position: relative;
- }
-#section3-container{
-  position: relative;
-  height: 100vh;
-  z-index: -1;
-  padding:0px;
-}
-
-#section3-container img {
-  width: 100%;
-  height: 100%; }
 
 #section4-container{
   height: 100vh;
@@ -160,3 +90,137 @@ $navTextHover       : #626567;
   color: $navText!important;
   background: $navBg;
 }
+//section 1 Banner
+.banner { 
+    > img#bkgd {
+        position: relative;
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    > img#bkgd-b {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 7.5%;
+    }
+
+    > img#img-banner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+    }
+
+    > img#img-banner1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+    }
+
+    > img#img-banner2 {
+        position: absolute;
+        z-index: 1; 
+        width: 40%;
+        height: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 24%;
+    }
+
+    > img#img-banner3 {
+        position: absolute;
+        z-index: 1; 
+        width: 50%;
+        height: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 37%;
+    }
+
+    > img#img-banner4 {
+        position: absolute;
+        z-index: 1; 
+        width: 40%;
+        height: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+    }
+
+   
+    
+}
+// fin Seccion 1 
+// Seccion 2 Info Carousel
+#section2-container img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+// fin Seccion 2
+// Seccion 3 parallax
+#parallax-container{
+  background-image: url('../images/Home/parallax/heredia1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  position: relative;
+ }
+//fin Seccion 3
+//Seccion 4 carousel Iglesias
+#section3-container img {
+  width: 100%;
+  height: 100%; }
+//fin seccion 4
+//MEDIA
+@media (max-width: 708px) {
+    navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: $navText;
+        &:hover, &:focus {
+            color: $navTextHover;
+            background-color: $navHighlight; }}
+
+    .navbar-default .navbar-brand{
+        padding-left: 0px;
+        > img {
+            position:absolute;
+            margin-left: 5%;
+        }
+    }      
+
+  .section > img#img-banner4 {
+        position: absolute;
+        z-index: 1; 
+        width: 70%;
+        height: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 15%;
+   }
+   .section > img#img-banner1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        margin-top: -12%
+    }
+}
+// Utils classes 
