@@ -1,0 +1,2 @@
+Edit 1, Diego:
+- Se movieron los assets de YouTube y de Facebook a /images
