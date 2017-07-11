@@ -11,6 +11,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
     
     <!-- Custom Css -->
     <link rel="stylesheet" href="../css/home.css" >
@@ -40,16 +41,22 @@
         </ul>
       </div><!-- /.navbar-collapse -->
     </nav>
+    <main>
+      <section>
     <!-- SECTION #1 -->
     <main>
 
       <section>
-        <div id="section1-container">
-          <img id="img1" src="../images/Home-A1.jpg"/>
-          <img id="img2" src="../images/Home-A2.png"/>
-          <img id="img3" src="../images/Home-A3.png"/>
+        <div class="container-fluid section banner">
+          <img id="bkgd" src="../images/Home/banner/Home-B2.png"/>
+          <img id="bkgd-b" src="../images/Home/banner/Home-B1.png"/>
+          <img id="img-banner" src="../images/Home/banner/Home-B3.png"/>
+          <img id="img-banner1" src="../images/Home/banner/Home-B4.png"/>
+          <img id="img-banner2" src="../images/Home/banner/Home-B5.png"/>
+          <img id="img-banner3" src="../images/Home/banner/Home-B6.png"/>
+          <img id="img-banner4" src="../images/Home/banner/Home-B8.png"/>
         </div>
-      </section>
+      </section>  
 
       <section>
 
@@ -107,14 +114,5 @@
     </div>
     
     </footer>
-  <script>
-    $(document).ready(function() {
-      $("#img1").toggleClass("transparent-no");
-      setTimeout(function(){
-        $("#img2").toggleClass("transparent-no");
-      }, 2000);
-      
-    });
-  </script>  
   </body>
 </html>
