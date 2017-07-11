@@ -1,2 +1,10 @@
 Edit 1, Diego:
 - Se movieron los assets de YouTube y de Facebook a /images
+
+Edit 2, Andres 
+- Merge de Cambios Andres y Diego
+- Creando clases reutilizables para las secciones
+- agregando imagen de parallax mandada por Nolan
+- mergeando a Master
+- agregando responsive js 
+- agregando home.css(.map) al gitignore NOTA: ahora se tendrá que correr el sass la primera vez que se clone el repo
